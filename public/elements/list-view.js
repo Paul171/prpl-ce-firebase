@@ -10,6 +10,7 @@
 
 class ListViewElement extends HTMLElement {
   connectedCallback() {
+    //lazy-loading the data
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/data/list.json');
     xhr.addEventListener('load', () => this.renderItems(JSON.parse(xhr.responseText)));

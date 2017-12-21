@@ -1,0 +1,28 @@
+{
+  "name": "push-render-precache-lazyload",
+  "version": "1.0.0",
+  "description": "learn push, render, precache and lazy load from codelab google",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add-firebase": "firebase use --add",
+    "login-firebase": "firebase login",
+    "serve-firebase": "firebase serve",
+    "deploy-firebase": "firebase deploy",
+    "workbox-cli-generate-sw":"workbox generate:sw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Paul171/prpl-ce-firebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paul171/prpl-ce-firebase/issues"
+  },
+  "homepage": "https://github.com/Paul171/prpl-ce-firebase#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.16.0",
+    "workbox-cli": "^2.1.2"
+  }
+}

@@ -28,5 +28,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <list-view></list-view>
     <detail-view></detail-view>
   </my-app>
+  <script>
+    if('serviceWorker' in window.navigator){
+      window.addEventListener('load', function(){
+        window.navigator.serviceWorker.register('/sw.js');//service worker will precache our static assets
+      });
+    }
+  </script>
 </body>
 </html>
